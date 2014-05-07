@@ -55,6 +55,7 @@
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#community">Community</a></li>
 <li><a href="#heroes">Heroes</a></li>
+<li><a href="#a-live-example">Live example</a></li>
 <li><a href="#license">License</a></li>
 </ul><h2>
 <a name="quick-start" class="anchor" href="#quick-start"><span class="octicon octicon-link"></span></a>Quick start</h2>
@@ -148,6 +149,28 @@
 <li><a href="http://github.com/kurenn">http://github.com/kurenn</a></li>
 <li><a href="http://klout.com/#/kurenn">http://klout.com/#/kurenn</a></li>
 </ul><h2>
+<a name="a-live-example" class="anchor" href="#a-live-example"><span class="octicon octicon-link"></span></a>A live example</h2>
+
+<p>We have deployed an example application on Heroku for you to give it a spin, visit <code>http://sabisu.herokuapp.com/sabisu_rails/explorer</code> and because is a demo the api only has GET endpoints.</p>
+
+<p>The authentication credentials are:</p>
+
+<pre><code>username: admin
+password: sekret
+</code></pre>
+
+<p>The file configuration for Heroku turns out to be more complex, check it out:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="no">SabisuRails</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+
+  <span class="n">config</span><span class="o">.</span><span class="n">base_api_uri</span> <span class="o">=</span> <span class="no">ENV</span><span class="o">[</span><span class="s1">'API_URL'</span><span class="o">]</span>
+  <span class="n">config</span><span class="o">.</span><span class="n">resources</span> <span class="o">=</span> <span class="o">[</span><span class="s2">"products"</span><span class="p">,</span> <span class="s2">"users"</span><span class="o">]</span>
+  <span class="n">config</span><span class="o">.</span><span class="n">default_resource</span> <span class="o">=</span> <span class="s2">"users"</span>
+
+<span class="k">end</span>
+</pre></div>
+
+<h2>
 <a name="copyright-and-license" class="anchor" href="#copyright-and-license"><span class="octicon octicon-link"></span></a>Copyright and license</h2>
 
 <p>Code and documentation copyright 2013-2014 Icalia Labs. Code released under <a href="LICENSE">the MIT license</a>.</p>
