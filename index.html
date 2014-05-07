@@ -32,7 +32,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="sabisu" class="anchor" href="#sabisu"><span class="octicon octicon-link"></span></a><a href="https://github.com/IcaliaLabs/sabisu">Sabisu</a>
+<a name="sabisu" class="anchor" href="#sabisu"><span class="octicon octicon-link"></span></a><a href="https://github.com/IcaliaLabs/sabisu-rails">Sabisu</a>
 </h1>
 
 <p>Sabisu is a powerful postman-like engine client to explore your Rails application api. It's still under heavy development, but it is quite impressive and beautiful. Give it a try!</p>
@@ -42,7 +42,7 @@
 <p>To get started, checkout:</p>
 
 <h4>
-<a name="httpicalialabsgithubiosabisu" class="anchor" href="#httpicalialabsgithubiosabisu"><span class="octicon octicon-link"></span></a><a href="http://icalialabs.github.io/sabisu/">http://icalialabs.github.io/sabisu/</a>
+<a name="httpicalialabsgithubiosabisu-rails" class="anchor" href="#httpicalialabsgithubiosabisu-rails"><span class="octicon octicon-link"></span></a><a href="http://icalialabs.github.io/sabisu-rails/">http://icalialabs.github.io/sabisu-rails/</a>
 </h4>
 
 <h2>
@@ -74,23 +74,23 @@
 
 <p>After you install Sabisu you need to run the generator:</p>
 
-<div class="highlight highlight-console"><pre><span class="go">rails g sabisu:install</span>
+<div class="highlight highlight-console"><pre><span class="go">rails g sabisu_rails:install</span>
 </pre></div>
 
 <p>The generator will install in initializer which describes all the Sabisu configuration options.</p>
 
 <p>Some of these configuration options include you api endpoint base uri, so as your resources, so you better take a look at it.</p>
 
-<p>Once you are done with the configuration, start your rails application and navigate to <code>http://localhost:3000/sabisu/explorer</code></p>
+<p>Once you are done with the configuration, start your rails application and navigate to <code>http://localhost:3000/sabisu_rails/explorer</code></p>
 
 <p>If everything went good you should see a nice explorer interface with your resources.</p>
 
 <h2>
 <a name="customization" class="anchor" href="#customization"><span class="octicon octicon-link"></span></a>Customization</h2>
 
-<p>Sabisu is highly customizable to make your life easier, here is a quick example of a real app configuration, remember you have the configuration file under <code>config/initializers/sabisu.rb</code>.</p>
+<p>Sabisu is highly customizable to make your life easier, here is a quick example of a real app configuration, remember you have the configuration file under <code>config/initializers/sabisu_rails.rb</code>.</p>
 
-<div class="highlight highlight-ruby"><pre><span class="no">Sabisu</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+<div class="highlight highlight-ruby"><pre><span class="no">SabisuRails</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
 
   <span class="c1"># Base uri for posting the </span>
    <span class="n">config</span><span class="o">.</span><span class="n">base_api_uri</span> <span class="o">=</span> <span class="s1">'api.sabisu.dev'</span>
@@ -115,9 +115,9 @@
 <h2>
 <a name="bug-tracker--feature-request" class="anchor" href="#bug-tracker--feature-request"><span class="octicon octicon-link"></span></a>Bug tracker &amp; feature request</h2>
 
-<p>Have a bug or a feature request? <a href="https://github.com/IcaliaLabs/sabisu/issues">Please open a new issue</a>. Before opening any issue, please search for existing issues.</p>
+<p>Have a bug or a feature request? <a href="https://github.com/IcaliaLabs/sabisu-rails/issues">Please open a new issue</a>. Before opening any issue, please search for existing issues.</p>
 
-<p>We recommend you to read the version <a href="https://github.com/IcaliaLabs/sabisu/issues?milestone=2&amp;state=open">milestiones</a> if you feel like want to collaborate.</p>
+<p>We recommend you to read the version <a href="https://github.com/IcaliaLabs/sabisu-rails/issues?milestone=2&amp;state=open">milestiones</a> if you feel like want to collaborate.</p>
 
 <h2>
 <a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
