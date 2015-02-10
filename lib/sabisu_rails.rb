@@ -2,7 +2,7 @@ require 'httparty'
 
 module SabisuRails
   extend ActiveSupport::Autoload
-
+  extend ActiveSupport::Inflector
   autoload :Client
   autoload :Request
   autoload :RouteRecognizer
